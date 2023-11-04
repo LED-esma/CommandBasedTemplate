@@ -9,12 +9,13 @@ import edu.wpi.first.math.controller.PIDController;
 public class RoboTires extends WPI_TalonFX{
 
 //constants
-private double ratio;
-private double circumferenceInInches;
+private double ratio = 10.71;
+private double circumferenceInInches = 3 * Math.PI;
 private double inches = 12;
 private double totalInches;
 private double motorRotations;
 private double encoderTicks = 2048;
+//can set above varabiales to a default as shown
 
     public RoboTires(int CANid){
         super(CANid);
