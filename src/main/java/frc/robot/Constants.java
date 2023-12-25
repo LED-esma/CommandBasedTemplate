@@ -10,7 +10,6 @@ public class Constants {
         public static int frontLeftMotor;
         public static int backRightMotor;
         public static int frontRightMotor;
-
     }
 
     public static class OperatorC{

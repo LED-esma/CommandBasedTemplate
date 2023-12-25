@@ -20,7 +20,6 @@ public class driveTrain extends SubsystemBase {
     final static MotorControllerGroup Rgroup = new MotorControllerGroup(backRightMotor, frontRightMotor);
     static SupplyCurrentLimitConfiguration configTalonCurrent = new SupplyCurrentLimitConfiguration(true,55,0,0);
 
-
     public void motorSettings(){
         backLeftMotor.setInverted(true);
         frontLeftMotor.setInverted(true);
@@ -42,7 +41,7 @@ public class driveTrain extends SubsystemBase {
         Lgroup.set(left);
         Rgroup.set(right);        
     }
-
+//Commands are started with "C_" as to identify them as commands rather than methods
     public Command C_drive(double left, double right){
         return new InstantCommand(
             () -> drive(left, right)
