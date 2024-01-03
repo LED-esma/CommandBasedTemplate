@@ -6,6 +6,7 @@ import frc.robot.subsystems.driveTrain;
 
 public class auto {
 
+//example auto; will not do anythhing; runs everything in sequence from right to left
     public static CommandBase defaultAutonomous(driveTrain drive){
         return Commands.sequence(drive.C_driveInDistance(0), drive.C_drive(0, 0)); 
     }
